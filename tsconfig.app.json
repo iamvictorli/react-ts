@@ -22,6 +22,7 @@
     "noImplicitOverride": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "outDir": "dist", // comment to see the js compilation next to the ts file
     "esModuleInterop": true,
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
@@ -29,5 +30,9 @@
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
   ]
 }
