@@ -1,10 +1,24 @@
+import { useState } from 'react'
+
 function App() {
+  const [count, setCount] = useState(0)
   return (
     <div>
-      <div>
+      <h1>
         React Typescript Scaffold
-      </div>
-      <button type="button">click here!</button>
+      </h1>
+      <button
+        type="button"
+        onClick={() => {
+          setCount(prevCount => prevCount + 1)
+        }}
+      >
+        You pressed me
+        {' '}
+        {count}
+        {' '}
+        times
+      </button>
     </div>
   )
 }
