@@ -1,4 +1,4 @@
-name: Run Tests
+name: Lint and Test
 
 on:
   pull_request:
@@ -28,6 +28,9 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+
+      - name: Run linter
+        run: pnpm lint
 
       - name: Run tests
         run: pnpm test
