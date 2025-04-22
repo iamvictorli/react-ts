@@ -9,3 +9,6 @@ updates:
       include: scope
     reviewers:
       - iamvictorli
+    groups:
+      root-deps:
+        patterns: ['*']
